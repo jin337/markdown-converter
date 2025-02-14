@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Html2Markdown",
+  "name": "Html2Markdown - 网页转换Markdown",
   "description": "网页元素转换为Markdown",
   "version": "1.0",
   "permissions": ["activeTab"],
