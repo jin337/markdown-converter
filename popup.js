@@ -41,9 +41,11 @@ document.querySelectorAll('input[name="elementType"]').forEach((input) => {
     if (document.getElementById('idOption').checked) {
       // 如果选择了 ID，设置默认值为 'article-root'
       elementInput.value = 'article-root'
+      document.getElementById('titleKey').innerText = 'ID'
     } else {
       // 如果选择了 class，设置默认值为 'markdown-body'
       elementInput.value = 'markdown-body'
+      document.getElementById('titleKey').innerText = 'Class'
     }
   })
 })
@@ -51,6 +53,8 @@ document.querySelectorAll('input[name="elementType"]').forEach((input) => {
 // 初始设置默认值
 if (document.getElementById('idOption').checked) {
   document.getElementById('elementId').value = 'article-root'
+  document.getElementById('titleKey').innerText = 'ID'
 } else {
   document.getElementById('elementId').value = 'markdown-body'
+  document.getElementById('titleKey').innerText = 'Class'
 }
